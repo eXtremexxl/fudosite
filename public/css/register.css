@@ -1,0 +1,162 @@
+/* Переиспользуем переменные из style.css */
+:root {
+    --primary-color: #f54748;
+    --primary-color-dark: #d83e3e;
+    --text-dark: #2e2e2e;
+    --text-light: #595959;
+    --extra-light: #f3f4f6;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+.auth-wrapper {
+    min-height: calc(100vh - 7rem); /* Высота экрана минус хедер (5rem) и футер (примерно 2rem) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.auth-form {
+    max-width: 400px;
+    width: 90%;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form_title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form_label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.form_input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--extra-light);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--text-dark);
+    font-family: "Poppins", sans-serif;
+}
+
+.form_input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(245, 71, 72, 0.5);
+}
+
+.form_button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form_button:hover {
+    background: var(--primary-color-dark);
+}
+
+.form_link {
+    display: block;
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.form_link:hover {
+    color: var(--primary-color-dark);
+}
+
+.error {
+    color: #ff0000;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .auth-wrapper {
+        min-height: calc(100vh - 6.5rem); /* Уменьшаем высоту для планшетов */
+        padding: 0 0.5rem;
+    }
+
+    .auth-form {
+        padding: 1.5rem;
+        width: 85%;
+    }
+
+    .form_title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .form_label {
+        font-size: 0.9rem;
+    }
+
+    .form_input {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .form_button {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-wrapper {
+        min-height: calc(100vh - 5.5rem); /* Уменьшаем высоту для мобильных устройств */
+    }
+
+    .auth-form {
+        padding: 1rem;
+        width: 80%;
+    }
+
+    .form_title {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .form_label {
+        font-size: 0.8rem;
+    }
+
+    .form_input {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .form_button {
+        padding: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .form_link {
+        font-size: 0.8rem;
+    }
+}
