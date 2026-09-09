@@ -1,16 +1,17 @@
-# Магазин спортивных товаров
+# Сайт ресторана
 
-Интернет-магазин на Laravel для продажи спортивных товаров с каталогом и корзиной.
+Сайт-визитка для ресторана, разработанный на Laravel. Проект находится в процессе доработки, основная структура готова.
 
 ## Функционал
-- Каталог товаров с отображением
-- Корзина покупок
-- Система заказов
+- Главная страница с информацией о ресторане
+- Меню
+- Контактная информация
 
 ## Стек
-Laravel, MySQL, JavaScript, CSS
+Laravel, MySQL, HTML, CSS
 
 ---
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
